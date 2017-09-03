@@ -1,5 +1,8 @@
 $(document).ready(function(){
+    // produtos selecionados
     var selectedProducts = [];
+
+    // lista de produtos
     var products = [
         {name: "Camisa Masculina Vermelho Vinho", price: 15.9, selected: false, category: "clothes", img: "img/p1.jpg"},
         {name: "Vestido Feminino Azul Escuro", price: 24.5, selected: false, category: "clothes", img: "img/p4.jpg"},
@@ -80,7 +83,7 @@ $(document).ready(function(){
     })
 
     
-    // clicar categoria da coluna lateral
+    // ao clicar categoria da coluna lateral
     $(".list-group-item").on("click", function(){
         var category = $(this).data("category");
         $(".list-group-item").removeClass("selected");

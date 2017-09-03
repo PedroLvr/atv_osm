@@ -1,22 +1,19 @@
-/* Remove the navbar's default rounded borders and increase the bottom margin */
-.navbar {
-    margin-bottom: 50px;
-    border-radius: 0;
-}
-/* Remove the jumbotron's default bottom margin */
+/* header */
 .jumbotron {
     margin-bottom: 0;
     background-color: #286090;
 }
+
+/* titulo header */
 .jumbotron h1 {
     text-shadow: 0 0 1px #fff;
 }
-/* Add a gray background color and some padding to the footer */
-footer {
-    background-color: #f2f2f2;
-    padding: 25px;
-}
 
+/* menu */
+.navbar {
+    margin-bottom: 50px;
+    border-radius: 0;
+}
 
 /* quantidade produtos carrinho */
 .open-modal .badge {
@@ -89,4 +86,11 @@ footer {
 .product-card.panel-success .panel-footer {
     background-color: #4caf50;
     color: #fff;
+}
+
+/* footer */
+footer {
+    padding: 25px;
+    color: #fff;;
+    background-color: #337ab7;
 }
