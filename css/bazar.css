@@ -1,0 +1,92 @@
+/* Remove the navbar's default rounded borders and increase the bottom margin */
+.navbar {
+    margin-bottom: 50px;
+    border-radius: 0;
+}
+/* Remove the jumbotron's default bottom margin */
+.jumbotron {
+    margin-bottom: 0;
+    background-color: #286090;
+}
+.jumbotron h1 {
+    text-shadow: 0 0 1px #fff;
+}
+/* Add a gray background color and some padding to the footer */
+footer {
+    background-color: #f2f2f2;
+    padding: 25px;
+}
+
+
+/* quantidade produtos carrinho */
+.open-modal .badge {
+    font-size: 1.2em;
+    background-color: #337ab7;
+}
+
+/* coluna lateral */
+.list-group-item {
+    font-weight: 700;
+    color: #666;
+    cursor: pointer;
+}
+.list-group-item:hover {
+    background-color: #eee;
+}
+.list-group-item.selected {
+    background-color: #337ab7;
+    color: #fff;
+}
+
+/* quadro card produtos */
+.product-square {
+    height: 300px;
+}
+.product-square.hidden {
+    display: none;
+}
+
+/* card container produto */
+.product-card {
+    margin-top: 15px;
+}
+.product-card.panel-success {
+    border-color: #4caf50;
+}
+
+/* preco card produto */
+.product-card .badge.product-price {
+    position: absolute;
+    top: 0;
+    padding: 5px 15px;
+    font-size: 1.2em;
+    background-color: #286090;
+}
+.product-card.panel-success .badge.product-price {
+    background-color: #4caf50;
+}
+
+/* imagem card produto */
+.product-card .product-image {
+    height: 100px;
+    margin: auto;
+    width: auto;
+}
+
+/* footer card produto */
+.product-card .panel-footer {
+    padding: 5px;
+    color: #555;
+}
+.product-card .panel-footer p {
+    height: 50px;
+    font-size: 1em;
+    font-weight: 700;
+}
+.product-card .panel-footer button {
+    outline: none;
+}
+.product-card.panel-success .panel-footer {
+    background-color: #4caf50;
+    color: #fff;
+}

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Bazar TADS</title>
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/font-awesome.min.css">
+        <link rel="stylesheet" href="css/bazar.css">
+    </head>
+
+    <body>
+
+        <!-- jumbotrom -->
+        <div class="jumbotron">
+            <div class="container text-center overlay">
+                <h1>Bazar TADS</h1>
+                <p></p>
+            </div>
+        </div>
+        <!-- end jumbotron -->
+
+        <!-- navbar -->
+        <nav class="navbar navbar-inverse">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="#">Bazar TADS</a>
+                </div>
+                <div class="collapse navbar-collapse" id="myNavbar">
+                    <ul class="nav navbar-nav navbar-left">
+                        <li><a href="#" onclick="document.body.style.fontSize = '12px'">-A</a></li>
+                        <li><a href="#" onclick="document.body.style.fontSize = '14px'">A</a></li>
+                        <li><a href="#" onclick="document.body.style.fontSize = '16px'">+A</a></li>
+                    </ul>
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="#"><i class="fa fa-user fa-lg"></i> Minha Conta</a></li>
+                        <li><a href="#" class="open-modal" data-toggle="modal" data-target="#myModal">
+                            <span id="cart-length" class="badge">0</span>
+                            <i class="fa fa-shopping-cart fa-lg"></i> Meu Carrinho</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- end navbar -->
+
+        <!-- secao produtos -->
+        <section id="products-section">
+            <div class="container">
+                <div class="row">
+
+                    <!-- coluna lateral -->
+                    <div class="col-md-2">
+                        <div class="row">
+                            <li class="col-xs-12 list-group-item selected" data-category="all">Todos</li>
+                            <li class="col-xs-12 list-group-item" data-category="clothes">Roupas</li>
+                            <li class="col-xs-12 list-group-item" data-category="footwear">Calçados</li>
+                            <li class="col-xs-12 list-group-item" data-category="decoration">Decoração</li>
+                        </div>
+                        <br/> <!-- end coluna lateral -->
+                    </div>
+
+
+                    <!-- coluna principal -->
+                    <div class="col-md-10">
+                        <!-- lista produtos -->
+                        <div id="products-list" class="row"></div>
+                    </div> <!-- end coluna principal -->
+
+                </div>
+            </div>
+        </section> <!-- end secao produtos -->
+
+        <footer class="container-fluid text-center">
+            <p>Online Store Copyright</p>
+            <form class="form-inline">Get deals:
+                <input type="email" class="form-control" size="50" placeholder="Email Address">
+                <button type="button" class="btn btn-danger">Sign Up</button>
+            </form>
+        </footer>
+
+
+        <!-- Modal -->
+        <div id="myModal" class="modal fade" role="dialog">
+            <div class="modal-dialog">
+                <!-- Modal content-->
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <h4 class="modal-title">Meu Carrinho</h4>
+                    </div>
+                    <div class="modal-body">
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-warning" data-dismiss="modal">Cancelar</button>
+                        <button type="button" class="btn btn-success" onclick="window.location.reload()">Finalizar Compra</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- scripts -->
+        <script type="text/javascript" src="js/jquery-3.2.0.min.js"></script>
+        <script type="text/javascript" src="js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="js/bazar.js"></script>
+
+    </body>
+
+</html>
